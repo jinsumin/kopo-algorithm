@@ -23,7 +23,7 @@ public class Main {
 }
 
 class Solution {
-    public void solution(String[] phoneBook) {
+    public static void solution(String[] phoneBook) {
         if (phoneBook.length <= 1) {
             System.out.println("YES");
             return;
