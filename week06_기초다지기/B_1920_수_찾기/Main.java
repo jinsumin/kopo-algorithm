@@ -1,6 +1,6 @@
 package week06_기초다지기.B_1920_수_찾기;
 
-import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class Main {
@@ -23,12 +23,12 @@ public class Main {
 
 class Solution {
     public void solution(int n, int m, int[] inputA, int[] inputB) {
-        HashMap<Integer, Integer> hashMap = new HashMap<>();
+        HashSet<Integer> hashSet = new HashSet<>();
         for (int i = 0; i < n; i++) {
-            hashMap.put(inputA[i], 0);
+            hashSet.add(inputA[i]);
         }
         for (int i = 0; i < m; i++) {
-            if (hashMap.containsKey(inputB[i])) {
+            if (hashSet.contains(inputB[i])) {
                 System.out.println(1);
             } else {
                 System.out.println(0);
