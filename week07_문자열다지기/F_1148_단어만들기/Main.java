@@ -1,6 +1,5 @@
 package week07_문자열다지기.F_1148_단어만들기;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class Main {
@@ -46,6 +45,8 @@ class Solution {
                     arrayList.add(s);
                 }
             }
+            hashMap = null;
+            System.gc();
             HashMap<Character, Integer> answer = new HashMap<>();
             for (int j = 0; j < word.length(); j++) {
                 char targetChar = word.charAt(j);
@@ -57,6 +58,8 @@ class Solution {
                 }
                 answer.put(targetChar, count);
             }
+            arrayList = null;
+            System.gc();
             LinkedList<Map.Entry<Character, Integer>> entryLinkedList = new LinkedList<Map.Entry<Character, Integer>>(answer.entrySet());
             entryLinkedList.sort(new Comparator<Map.Entry<Character, Integer>>() {
                 @Override
@@ -64,6 +67,8 @@ class Solution {
                     return o2.getValue().compareTo(o1.getValue());
                 }
             });
+            answer = null;
+            System.gc();
             printMin(entryLinkedList);
             printMax(entryLinkedList);
             System.out.println();
