@@ -1,4 +1,4 @@
-package week08_수학다지기.D_1247_부호;
+package week08_수학다지기.C_1247_부호;
 
 import java.math.BigInteger;
 import java.util.Scanner;
