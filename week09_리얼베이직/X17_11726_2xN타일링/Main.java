@@ -1,4 +1,4 @@
-package week09_리얼베이직.X17_12726_2xN타일링;
+package week09_리얼베이직.X17_11726_2xN타일링;
 
 // package tiling_2xn_11726;
 
