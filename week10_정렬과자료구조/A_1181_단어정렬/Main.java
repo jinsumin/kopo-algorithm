@@ -32,13 +32,7 @@ class Solution {
                 if (o1.length() > o2.length()) {
                     return 1;
                 } else if (o1.length() == o2.length()) {
-                    if (o1.compareTo(o2) > 0) {
-                        return 1;
-                    } else if (o1.compareTo(o2) == 0) {
-                        return 0;
-                    } else {
-                        return -1;
-                    }
+                    return Integer.compare(o1.compareTo(o2), 0);
                 } else {
                     return -1;
                 }
