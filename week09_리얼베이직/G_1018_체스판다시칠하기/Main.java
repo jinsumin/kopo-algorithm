@@ -41,6 +41,7 @@ class Solution {
                 if (tile != boards[i].charAt(j)) {
                     countOfWrongTile++;
                 }
+                // swap tile
                 if (tile == 'W') {
                     tile = 'B';
                 } else {
