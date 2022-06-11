@@ -1,11 +1,10 @@
-package week10_정렬과자료구조.X1_15650_N과M2;
+package week10_정렬과자료구조.X2_15652_N과M4;
 
 import java.util.Scanner;
 
 /**
  * Created by soomin on 2022/06/11
  */
-
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -34,7 +33,7 @@ class Solution {
 
         for (int i = at; i <= n; i++) {
             array[depth] = i;
-            dfs(array, n, m, i + 1, depth + 1);
+            dfs(array, n, m, i, depth + 1);
         }
     }
 }
