@@ -1,9 +1,6 @@
 package week11_그리디알고리즘.A_11047_동전0;
 
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.Scanner;
-
 
 /**
  * Created by soomin on 2022/06/20
