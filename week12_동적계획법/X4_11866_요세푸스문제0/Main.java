@@ -26,11 +26,12 @@ class Solution {
             queue.offer(i);
         }
         while (!queue.isEmpty()) {
-            int count = k;
             int answer = 0;
-            for (int i = 0; i < count; i++) {
-                answer = queue.poll();
-                if (i == count - 1) {
+            for (int i = 0; i < k; i++) {
+                if (!queue.isEmpty()) {
+                    answer = queue.poll();
+                }
+                if (i == k - 1) {
                     break;
                 }
                 queue.offer(answer);
