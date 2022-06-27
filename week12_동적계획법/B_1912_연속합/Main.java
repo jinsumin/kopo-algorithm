@@ -24,17 +24,18 @@ public class Main {
 
 class Solution {
     public long solution(int n, int[] inputs) {
-        long answer = 0;
         int[] dp = new int[n];
         dp[0] = inputs[0];
+        long max = dp[0];
         for (int i = 1; i < n; i++) {
+            dp[i] = inputs[i];
             if (dp[i - 1] > 0) {
-                answer += dp[i - 1];
-                dp[i] += (dp[i - 1] + inputs[i]);
-            } else {
-                answer = 0;
+                dp[i] += dp[i - 1];
+            }
+            if (dp[i] > max) {
+                max = dp[i];
             }
         }
-        return answer;
+        return max;
     }
 }

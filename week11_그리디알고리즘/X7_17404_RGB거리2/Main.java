@@ -22,13 +22,13 @@ public class Main {
 
 class Solution {
     public int solution(int[][] map, int n) {
-        // TO DO : logic
-        for (int i = 2; i < n; i++) {
+        // TO DO :
+        int memoA, memoB, memoC;
+        for (int i = 1; i < n - 1; i++) {
             map[i][0] += Math.min(map[i - 1][1], map[i - 1][2]);
             map[i][1] += Math.min(map[i - 1][0], map[i - 1][2]);
             map[i][2] += Math.min(map[i - 1][0], map[i - 1][1]);
         }
-
-        return 0;
+        return Math.min(Math.min(map[n - 1][0], map[n - 1][1]), map[n - 1][2]);
     }
 }
