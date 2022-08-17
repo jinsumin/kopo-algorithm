@@ -1,4 +1,4 @@
-package CASE_STUDY.week02.아이들과선물상자;
+package CASE_STUDY.아이들과선물상자;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package CASE_STUDY.week02.카드;
+package CASE_STUDY.카드;
 
 import java.util.LinkedList;
 import java.util.Scanner;

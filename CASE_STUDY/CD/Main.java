@@ -1,4 +1,4 @@
-package CASE_STUDY.week02.CD;
+package CASE_STUDY.CD;
 
 import java.io.BufferedReader;
 import java.io.IOException;
